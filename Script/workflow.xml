@@ -16,7 +16,7 @@
                     <value>${queueName}</value>
                 </property>
             </configuration>
-            <command>import --connect jdbc:mysql://localhost/movielens --driver com.mysql.jdbc.Driver --table movies -m 1</command>
+            <command>import --connect jdbc:mysql://localhost/movielens --driver com.mysql.jdbc.Driver --table movies -m 1 --username root --password hadoop</command>
         </sqoop>
         <ok to="hive-node"/>
         <error to="fail"/>
